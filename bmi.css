@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    background-color: lightskyblue;
+    
+}
+
+    
+#container{
+    position: relative;
+    width: 500px;
+    height: 500px;   
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: black;
+}
+
+.girl{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+}
+
+
+
+#container nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    padding: 20px;
+    background-color: lightseagreen;
+    text-align: center;
+    
+}
+
+#inp1{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    background-color: white;
+    padding: 2px 5px;
+
+   
+}
+
+#inp2{
+    position: absolute;
+    margin-top: 35px;
+    left: 20%;
+    top: 20%;
+    background-color: white;
+    padding: 2px 5px;
+    
+}
+
+#note{
+    position: absolute;
+    background-color: black;
+    padding: 4px;
+    color: antiquewhite;
+    top: 70%;
+    left: 10%;
+}
+
+#inpbox{
+    background: url(images/bg1.avif);
+    height: 200px;
+    width: auto;
+}
+
+input{
+    border: none;
+    padding: 5px;
+}
+
+#btn{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    margin-top: 3px;
+    border: none;
+    padding: 3px 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+#btn:hover{
+    background-color: blanchedalmond;   
+}
+
+
+h4{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    display: inline-block;
+    width: 100%;
+    
+}
+#meme{
+    
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+#mimg{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    
+    
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+#memebox{
+    display: none;
+    width: 100vh;
+    height: 200%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#inner{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    background-color: black;
+    
+    top: 13%;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+
+#back{
+    z-index: 2;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
+
+/* ---------- responsive ----------- */
+
+@media only screen and (max-width: 600px) {
+
+    .girl{
+        width: 250px;
+        height: 200px;
+    }
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+    <script src="bmi.js"> </script>
+</head>
+<body>
+
+
+    <div id="container">
+
+        <nav >BMI calculator</nav>
+
+            <div id="inpbox">
+                <p id="inp1">Height : <input id="val1" type="number"  placeholder="Enter your height"></p>
+                <p id="inp2">Weight : <input id="val2" type="number"  placeholder="Enter your weight"></p>
+                <br>
+                <button id="btn" onclick="bmiCal()">Check</button>   
+                
+            </div>
+            
+    
+            <div id="note">
+                
+                <p>Under Weight = Less than 18.6</p>
+                <br>
+                <p>Normal weight = 18.6 and 24.9</p>
+                <br>
+                <p>Over weight = Greater than 24.9</p>
+            </div>
+
+        <img src="images/bg.png" alt="img" class="girl">
+    </div>
+    
+    <div id="memebox"></div>
+        <div id="meme">
+            <h4>Result: <p id="result"></p> </h4>
+            <button id="back" onclick="back()">back</button>
+            <div id="inner">
+                <img id="mimg" src="" alt="img" >
+                
+            </div>
+                
+            
+
+            
+        </div>
+    
+
+</body>
+</html>
